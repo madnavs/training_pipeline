@@ -14,24 +14,24 @@
  **Output:**
 generates a train.csv in same folder containg `dicom_path, groundtruth_path`
 
-![ ](Selection_022.png  "img")
+![ ](sample_result/Selection_022.png  "img")
 
 1. If  there is `IM-0001-0068-icontour-manual.txt`. Then,
 
 Input Image             |  Gen Truth
 :-------------------------:|:-------------------------:
-![](68.png)  |  ![](IM-0001-0068-icontour-manualGT.png)
+![](sample_result/68.png)  |  ![](sample_result/IM-0001-0068-icontour-manualGT.png)
 
 2. if there is no `annotation` available then I created an empty image for now (Can be very easily removed/modified)
 
 Input Image             |  Gen Truth
 :-------------------------:|:-------------------------:
-![](100.png)  |  ![](IM-0001-00100-icontour-manualGT.png)
+![](sample_result/100.png)  |  ![](sample_result/IM-0001-0100-icontour-manualGT.png)
 
  **Question**
  1. How did I verify that you are parsing the contours correctly?
  -  `input_dicom*generated_mask` and saved in a folder.
-  ![](multiplied.png) 
+  ![](sample_result/multiplied.png) 
   2.  What changes did you make to the code, if any, in order to integrate it into our production code base?
   	- I just imported parsing.py. I did not make any changes to it. I just created Task1.py
   	
