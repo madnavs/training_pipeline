@@ -40,6 +40,6 @@ Input Image             |  Gen Truth
 ### Task 2
 Since task 1 has been done at both patient level and scan level. Task 2 became easy.
 1. I just iterated over `num_epochs` and `each_batch` and loaded `X,Y` as numpy array of `[batch_size,height,width,channels]` as specified.
- 2. I I had more time, I would have tried unit test. After talking to you I am motivated to learn.
+ 2. If I had more time, I would have tried unit test. After talking to you I am motivated to learn.
  **Enhancements:** It would be good to know what's the model architecture to make the pipeline more relavent.
  
