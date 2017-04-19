@@ -1,5 +1,5 @@
 ## Train Pipeline
-**Run:** Place Task1.py,Task2.py and parsing.py in final_data folder and run. The folder should contain contourfiles and dicom
+**Run:** Place `Task1.py`,`Task2.py` and `parsing.py` in `final_data` folder and run. The folder should contain `contourfiles` and `dicom`
 
 ### Task 1
 **Overview :** I have created two classes
