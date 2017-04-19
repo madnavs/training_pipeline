@@ -30,9 +30,9 @@ class scan:
             print('Mask Generation failed')
 
 class patient:
-        """
-         Each patient dicom folder and label folder is clubbed together. Each patient has many scan objects
-        """
+    """
+        Each patient dicom folder and label folder is clubbed together. Each patient has many scan objects
+    """
     def __init__(self,dicom_folder,label_folder):
         self.label_folder=os.path.join(root_path,'contourfiles',label_folder,'i-contours')
         self.dicom_folder=os.path.join(root_path,'dicoms',dicom_folder)
