@@ -52,8 +52,6 @@ class patient:
 
     def getscans(self):
         return self.scans_info
-
-        pass
 if __name__ == "__main__":
     # Driver code
     # Read link.csv
