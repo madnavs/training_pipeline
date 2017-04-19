@@ -5,7 +5,9 @@ import parsing as par
 from random import shuffle
 
 def read_images(data,batch_size,start_indx,height=256,width=256,channels=1):
-    # Initialize X and Y whixh corresponds to input and ground truth respectively
+    """
+         For each batch loads dicom and features as an numpy array. Also prints indices (since not training)
+    """
     X=np.zeros((batch_size,height,width,channels),dtype='uint8')
     Y = np.zeros((batch_size, height, width, channels),dtype='uint8')
     for i in range(0,batch_size):
@@ -15,6 +17,7 @@ def read_images(data,batch_size,start_indx,height=256,width=256,channels=1):
             print(start_indx+i)
     return X,Y
 
+# The Driver code Starts Here
 #read csv (http://stackoverflow.com/questions/24662571/python-import-csv-to-list)
 with open('train.csv', 'rb') as f:
     reader = csv.reader(f)
@@ -25,13 +28,14 @@ batch_size=8
 epochs=6
 data_size=len(data)
 
-#Iterate at epoxh level and then batch level
+#Iterate at epoch level and then batch level
 for each_epoch in range(epochs):
    batch_indx = 0
 
    #shuffle data http://stackoverflow.com/questions/976882/shuffling-a-list-of-objects-in-python
    shuffle(data)
 
+   # Iterate over all batches
    for i in range(data_size/batch_size):
        X,Y=read_images(data,batch_size,batch_indx)
        # Given input to CNN Model Here
