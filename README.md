@@ -31,8 +31,10 @@ Input Image             |  Gen Truth
  **Question**
  1. How did I verify that you are parsing the contours correctly?
  -  `input_dicom*generated_mask` and saved in a folder.
-  ![](sample_result/multiplied.png) 
-  2.  What changes did you make to the code, if any, in order to integrate it into our production code base?
+ 
+ ![](sample_result/multiplied.png) 
+ 
+ 2.  What changes did you make to the code, if any, in order to integrate it into our production code base?
   	- I just imported parsing.py. I did not make any changes to it. I just created Task1.py
   	
 ### Task 2
